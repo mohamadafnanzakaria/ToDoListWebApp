@@ -1,7 +1,7 @@
 ﻿@page
 @model ToDoListWebApp.Pages.ListModel
 
-<a class="btn btn-primary" href="New">Create Task</a>
+<a class="btn btn-primary" href="New">Create Task</a> 
 
 <h1>ToDo List</h1>
 
@@ -12,6 +12,7 @@
             <th>Task</th>
             <th>Date</th>
             <th>Status</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -24,6 +25,7 @@
                     <td>@todo.Task</td>
                     <td>@todo.DateAdded.ToShortDateString()</td>
                     <td>@todo.Status</td>
+                    <td><a class="btn btn-primary" href="New">Edit</a></td>
                 </tr>
             }
         }else
